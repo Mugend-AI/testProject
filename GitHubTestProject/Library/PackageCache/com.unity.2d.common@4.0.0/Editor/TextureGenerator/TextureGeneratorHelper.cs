@@ -1,13 +1,13 @@
 using System;
 using Unity.Collections;
-
+using UnityEditor.Experimental.AssetImporters;
 using UnityEngine;
 
 namespace UnityEditor.U2D.Common
 {
     internal interface ITextureSettings
     {
-        void FillTextureGenerationSettings(ref UnityEditor.AssetImporters.TextureGenerationSettings settings);
+        void FillTextureGenerationSettings(ref TextureGenerationSettings settings);
     }
 
 
@@ -72,7 +72,7 @@ namespace UnityEditor.U2D.Common
 
         public SecondarySpriteTexture[] secondaryTextures { get { return m_SecondaryTextures;} set { m_SecondaryTextures = value; } }
 
-        void ITextureSettings.FillTextureGenerationSettings(ref UnityEditor.AssetImporters.TextureGenerationSettings settings)
+        void ITextureSettings.FillTextureGenerationSettings(ref TextureGenerationSettings settings)
         {
             settings.textureImporterSettings.sRGBTexture = colorTexture;
             settings.textureImporterSettings.readable = readable;
@@ -123,7 +123,7 @@ namespace UnityEditor.U2D.Common
         }
 
         public bool qualifyForPacking { get; set; }
-        public UnityEditor.AssetImporters.SpriteImportData[] spriteSheetData { get; set; }
+        public SpriteImportData[] spriteSheetData { get; set; }
 
         public TextureSpriteSettings()
         {
@@ -133,7 +133,7 @@ namespace UnityEditor.U2D.Common
             extrudeEdges = 1;
         }
 
-        public TextureSpriteSettings(string packingTag, int pixelsPerUnit, SpriteMeshType meshType, uint extrudeEdges, bool qualifyForPacking, UnityEditor.AssetImporters.SpriteImportData[] spriteSheetData = null)
+        public TextureSpriteSettings(string packingTag, int pixelsPerUnit, SpriteMeshType meshType, uint extrudeEdges, bool qualifyForPacking, SpriteImportData[] spriteSheetData = null)
         {
             this.packingTag = packingTag;
             this.pixelsPerUnit = pixelsPerUnit;
@@ -143,7 +143,7 @@ namespace UnityEditor.U2D.Common
             this.spriteSheetData = spriteSheetData;
         }
 
-        void ITextureSettings.FillTextureGenerationSettings(ref UnityEditor.AssetImporters.TextureGenerationSettings settings)
+        void ITextureSettings.FillTextureGenerationSettings(ref TextureGenerationSettings settings)
         {
             settings.textureImporterSettings.spritePixelsPerUnit = pixelsPerUnit;
             settings.textureImporterSettings.spriteMeshType = meshType;
@@ -184,7 +184,7 @@ namespace UnityEditor.U2D.Common
         public TextureWrapMode wrapModeV { get { return m_WrapModeV; } set { m_WrapModeV = value; } }
         public TextureWrapMode wrapModeW { get { return m_WrapModeW; } set { m_WrapModeW = value; } }
 
-        void ITextureSettings.FillTextureGenerationSettings(ref UnityEditor.AssetImporters.TextureGenerationSettings settings)
+        void ITextureSettings.FillTextureGenerationSettings(ref TextureGenerationSettings settings)
         {
             settings.textureImporterSettings.wrapMode = wrapMode;
             settings.textureImporterSettings.wrapModeU = wrapModeU;
@@ -224,7 +224,7 @@ namespace UnityEditor.U2D.Common
             this.alphaSource = alphaSource;
         }
 
-        void ITextureSettings.FillTextureGenerationSettings(ref UnityEditor.AssetImporters.TextureGenerationSettings settings)
+        void ITextureSettings.FillTextureGenerationSettings(ref TextureGenerationSettings settings)
         {
             settings.textureImporterSettings.alphaIsTransparency = alphaSource != TextureImporterAlphaSource.None;
             settings.textureImporterSettings.alphaSource = alphaSource;
@@ -303,7 +303,7 @@ namespace UnityEditor.U2D.Common
             this.fadeDistanceEnd = fadeDistanceEnd;
         }
 
-        void ITextureSettings.FillTextureGenerationSettings(ref UnityEditor.AssetImporters.TextureGenerationSettings settings)
+        void ITextureSettings.FillTextureGenerationSettings(ref TextureGenerationSettings settings)
         {
             settings.textureImporterSettings.mipmapEnabled = true;
             settings.textureImporterSettings.mipmapFilter = filter;
@@ -356,7 +356,7 @@ namespace UnityEditor.U2D.Common
             this.bumpiness = bumpiness;
         }
 
-        void ITextureSettings.FillTextureGenerationSettings(ref UnityEditor.AssetImporters.TextureGenerationSettings settings)
+        void ITextureSettings.FillTextureGenerationSettings(ref TextureGenerationSettings settings)
         {
             settings.textureImporterSettings.normalMapFilter = filter;
             settings.textureImporterSettings.convertToNormalMap = generateFromGrayScale;
@@ -405,7 +405,7 @@ namespace UnityEditor.U2D.Common
             this.seamless = seamless;
         }
 
-        void ITextureSettings.FillTextureGenerationSettings(ref UnityEditor.AssetImporters.TextureGenerationSettings settings)
+        void ITextureSettings.FillTextureGenerationSettings(ref TextureGenerationSettings settings)
         {
             settings.textureImporterSettings.textureShape = TextureImporterShape.TextureCube;
             settings.textureImporterSettings.cubemapConvolution = convolution;
@@ -416,7 +416,7 @@ namespace UnityEditor.U2D.Common
 
     internal static class TextureGeneratorHelper
     {
-        public static UnityEditor.AssetImporters.TextureGenerationOutput GenerateTextureSprite(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
+        public static TextureGenerationOutput GenerateTextureSprite(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
             TextureSpriteSettings spriteSettings, TextureAlphaSettings alphaSettings = null, TextureMipmapSettings mipmapSettings = null, TextureWrapSettings wrapSettings = null)
         {
             if (alphaSettings == null)
@@ -427,27 +427,27 @@ namespace UnityEditor.U2D.Common
             return GenerateTexture(buffer, bufferWidth, bufferHeight, TextureImporterType.Sprite, platformSettings, settings, spriteSettings, alphaSettings, mipmapSettings, wrapSettings);
         }
 
-        public static UnityEditor.AssetImporters.TextureGenerationOutput GenerateLightmap(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
+        public static TextureGenerationOutput GenerateLightmap(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
             TextureMipmapSettings mipmapSettings = null, TextureWrapSettings wrapSettings = null)
         {
             settings.colorTexture = true;
             return GenerateTexture(buffer, bufferWidth, bufferHeight, TextureImporterType.Lightmap, platformSettings, settings, mipmapSettings, wrapSettings);
         }
 
-        public static UnityEditor.AssetImporters.TextureGenerationOutput GenerateCookie(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
+        public static TextureGenerationOutput GenerateCookie(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
             TextureAlphaSettings alphaSettings = null, TextureMipmapSettings mipmapSettings = null, TextureCubemapSettings cubemapSettings = null, TextureWrapSettings wrapSettings = null)
         {
             return GenerateTexture(buffer, bufferWidth, bufferHeight, TextureImporterType.Cookie, platformSettings, settings, alphaSettings, mipmapSettings, cubemapSettings, wrapSettings);
         }
 
-        public static UnityEditor.AssetImporters.TextureGenerationOutput GenerateNormalMap(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
+        public static TextureGenerationOutput GenerateNormalMap(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
             TextureNormalSettings normalSettings, TextureMipmapSettings mipmapSettings = null, TextureCubemapSettings cubemapSettings = null, TextureWrapSettings wrapSettings = null)
         {
             settings.colorTexture = false;
             return GenerateTexture(buffer, bufferWidth, bufferHeight, TextureImporterType.NormalMap, platformSettings, settings, normalSettings, mipmapSettings, cubemapSettings, wrapSettings);
         }
 
-        public static UnityEditor.AssetImporters.TextureGenerationOutput GenerateTextureGUI(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
+        public static TextureGenerationOutput GenerateTextureGUI(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
             TextureAlphaSettings alphaSettings = null, TextureMipmapSettings mipmapSettings = null, TextureWrapSettings wrapSettings = null)
         {
             settings.colorTexture = false;
@@ -456,14 +456,14 @@ namespace UnityEditor.U2D.Common
             return GenerateTexture(buffer, bufferWidth, bufferHeight, TextureImporterType.GUI, platformSettings, settings, alphaSettings, mipmapSettings, wrapSettings);
         }
 
-        public static UnityEditor.AssetImporters.TextureGenerationOutput GenerateTextureSingleChannel(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
+        public static TextureGenerationOutput GenerateTextureSingleChannel(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
             TextureAlphaSettings alphaSettings = null, TextureMipmapSettings mipmapSettings = null, TextureCubemapSettings cubemapSettings = null, TextureWrapSettings wrapSettings = null)
         {
             settings.colorTexture = false;
             return GenerateTexture(buffer, bufferWidth, bufferHeight, TextureImporterType.SingleChannel, platformSettings, settings, alphaSettings, mipmapSettings, cubemapSettings, wrapSettings);
         }
 
-        public static UnityEditor.AssetImporters.TextureGenerationOutput GenerateTextureCursor(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
+        public static TextureGenerationOutput GenerateTextureCursor(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
             TextureAlphaSettings alphaSettings = null, TextureMipmapSettings mipmapSettings = null, TextureWrapSettings wrapSettings = null)
         {
             if (alphaSettings == null)
@@ -474,7 +474,7 @@ namespace UnityEditor.U2D.Common
             return GenerateTexture(buffer, bufferWidth, bufferHeight, TextureImporterType.Cursor, platformSettings, settings, alphaSettings, mipmapSettings, wrapSettings);
         }
 
-        public static UnityEditor.AssetImporters.TextureGenerationOutput GenerateTextureDefault(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
+        public static TextureGenerationOutput GenerateTextureDefault(NativeArray<Color32> buffer, int bufferWidth, int bufferHeight, TextureSettings settings, TextureImporterPlatformSettings platformSettings,
             TextureAlphaSettings alphaSettings = null, TextureMipmapSettings mipmapSettings = null, TextureCubemapSettings cubemapSettings = null, TextureWrapSettings wrapSettings = null)
         {
             if (mipmapSettings == null)
@@ -483,12 +483,12 @@ namespace UnityEditor.U2D.Common
             return GenerateTexture(buffer, bufferWidth, bufferHeight, TextureImporterType.Default, platformSettings, settings, alphaSettings, mipmapSettings, cubemapSettings, wrapSettings);
         }
 
-        static UnityEditor.AssetImporters.TextureGenerationOutput GenerateTexture(NativeArray<Color32> imageBuffer, int imageBufferWidth, int imageBufferHeight, TextureImporterType type, TextureImporterPlatformSettings platformSettings, params ITextureSettings[] otherSettings)
+        static TextureGenerationOutput GenerateTexture(NativeArray<Color32> imageBuffer, int imageBufferWidth, int imageBufferHeight, TextureImporterType type, TextureImporterPlatformSettings platformSettings, params ITextureSettings[] otherSettings)
         {
-            var textureGenerationSettings = new UnityEditor.AssetImporters.TextureGenerationSettings();
+            var textureGenerationSettings = new TextureGenerationSettings();
             textureGenerationSettings.platformSettings = platformSettings;
 
-            textureGenerationSettings.sourceTextureInformation = new UnityEditor.AssetImporters.SourceTextureInformation();
+            textureGenerationSettings.sourceTextureInformation = new SourceTextureInformation();
             textureGenerationSettings.sourceTextureInformation.height = imageBufferHeight;
             textureGenerationSettings.sourceTextureInformation.width = imageBufferWidth;
 
@@ -512,7 +512,7 @@ namespace UnityEditor.U2D.Common
                 if (otherSetting != null)
                     otherSetting.FillTextureGenerationSettings(ref textureGenerationSettings);
             }
-            return UnityEditor.AssetImporters.TextureGenerator.GenerateTexture(textureGenerationSettings, imageBuffer);
+            return TextureGenerator.GenerateTexture(textureGenerationSettings, imageBuffer);
         }
 
         static public TextureSettings ExtractTextureSettings(this TextureImporterSettings tis)

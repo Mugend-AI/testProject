@@ -49,9 +49,9 @@ namespace UnityEditor.U2D.Path
                     if (check.changed)
                     {
                         if (isActive)
-                            ToolManager.SetActiveTool<U>();
+                            EditorTools.EditorTools.SetActiveTool<U>();
                         else
-                            ToolManager.RestorePreviousTool();
+                            EditorTools.EditorTools.RestorePreviousTool();
                         hasChanged = true;
                     }
                 }
