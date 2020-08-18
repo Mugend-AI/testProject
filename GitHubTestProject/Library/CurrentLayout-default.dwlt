@@ -16,11 +16,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 43
     width: 1280
     height: 941
 =======
     y: 57
+=======
+    y: 45
+>>>>>>> parent of 8ad0dded... ver2
     width: 1440
     height: 789
 >>>>>>> parent of a657935d... oya
@@ -124,10 +128,14 @@ MonoBehaviour:
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 140
 =======
   controlID: 77
 >>>>>>> parent of a657935d... oya
+=======
+  controlID: 58
+>>>>>>> parent of 8ad0dded... ver2
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,10 +161,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 40
 =======
   controlID: 78
 >>>>>>> parent of a657935d... oya
+=======
+  controlID: 59
+>>>>>>> parent of 8ad0dded... ver2
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -371,11 +383,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 73
     width: 546
     height: 438
 =======
     y: 87
+=======
+    y: 75
+>>>>>>> parent of 8ad0dded... ver2
     width: 633
     height: 360
 >>>>>>> parent of a657935d... oya
@@ -392,7 +408,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 6.949916, y: -0.6352142, z: -41.514}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -444,7 +460,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 10
     speed: 2
-    m_Value: 10
+    m_Value: 11.086786
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -556,6 +572,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 532
     width: 546
     height: 411
@@ -566,6 +583,9 @@ MonoBehaviour:
   m_SerializedCustomFieldsValues: []
 =======
     y: 468
+=======
+    y: 456
+>>>>>>> parent of 8ad0dded... ver2
     width: 633
     height: 337
   m_ViewDataDictionary: {fileID: 0}
@@ -576,7 +596,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1024, y: 768}
+  m_TargetSize: {x: 1280, y: 720}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -584,12 +604,13 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 06000000000000000400000011000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 0b000000000000000400000012000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_HBaseRangeMin: -512
     m_HBaseRangeMax: 512
@@ -601,6 +622,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -192
     m_VBaseRangeMax: 192
 >>>>>>> parent of a657935d... oya
+=======
+    m_HBaseRangeMin: -320
+    m_HBaseRangeMax: 320
+    m_VBaseRangeMin: -180
+    m_VBaseRangeMax: 180
+>>>>>>> parent of 8ad0dded... ver2
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -626,7 +653,11 @@ MonoBehaviour:
 =======
       width: 633
       height: 316
+<<<<<<< HEAD
     m_Scale: {x: 0.8229167, y: 0.8229167}
+=======
+    m_Scale: {x: 0.87777776, y: 0.87777776}
+>>>>>>> parent of 8ad0dded... ver2
     m_Translation: {x: 316.5, y: 158}
 >>>>>>> parent of a657935d... oya
     m_MarginLeft: 0
@@ -635,6 +666,7 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -537.6
       y: -384
@@ -652,6 +684,15 @@ MonoBehaviour:
   m_defaultScale: 0.8229167
   m_LastWindowPixelSize: {x: 1266, y: 674}
 >>>>>>> parent of a657935d... oya
+=======
+      x: -360.56964
+      y: -180
+      width: 721.1393
+      height: 360
+    m_MinimalGUI: 1
+  m_defaultScale: 0.87777776
+  m_LastWindowPixelSize: {x: 1266, y: 674}
+>>>>>>> parent of 8ad0dded... ver2
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -705,6 +746,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 547
     y: 73
     width: 203
@@ -712,6 +754,10 @@ MonoBehaviour:
 =======
     x: 634
     y: 87
+=======
+    x: 634
+    y: 75
+>>>>>>> parent of 8ad0dded... ver2
     width: 220
     height: 718
 >>>>>>> parent of a657935d... oya
@@ -726,8 +772,12 @@ MonoBehaviour:
 =======
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: c4e6ffffb2e7ffff
 >>>>>>> parent of a657935d... oya
+=======
+      m_ExpandedIDs: f4faffff
+>>>>>>> parent of 8ad0dded... ver2
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Cube
@@ -773,6 +823,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 752
     y: 73
     width: 247
@@ -780,6 +831,10 @@ MonoBehaviour:
 =======
     x: 856
     y: 87
+=======
+    x: 856
+    y: 75
+>>>>>>> parent of 8ad0dded... ver2
     width: 278
     height: 718
 >>>>>>> parent of a657935d... oya
@@ -797,21 +852,26 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: 60
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_LastProjectPath: C:\Users\obaru\Desktop\testProject\GitHubTestProject
 =======
   m_LastProjectPath: /Users/bashiko_da_gama/Documents/GitHub/testProject/GitHubTestProject
 >>>>>>> parent of a657935d... oya
+=======
+  m_LastProjectPath: /Users/bashiko_da_gama/Desktop/GitHubTestProject
+>>>>>>> parent of 8ad0dded... ver2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: e2530000
     m_LastClickedID: 21474
@@ -821,6 +881,11 @@ MonoBehaviour:
     m_LastClickedID: 15220
     m_ExpandedIDs: 000000006c3b000000ca9a3b
 >>>>>>> parent of a657935d... oya
+=======
+    m_SelectedIDs: c4470000
+    m_LastClickedID: 18372
+    m_ExpandedIDs: 00000000c447000000ca9a3b
+>>>>>>> parent of 8ad0dded... ver2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -896,7 +961,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -930,6 +995,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1001
     y: 73
     width: 278
@@ -937,6 +1003,10 @@ MonoBehaviour:
 =======
     x: 1136
     y: 87
+=======
+    x: 1136
+    y: 75
+>>>>>>> parent of 8ad0dded... ver2
     width: 303
     height: 718
 >>>>>>> parent of a657935d... oya
