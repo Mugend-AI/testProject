@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/kinoko.unity
+=======
+- path: Assets/Scenes/bashiko.unity
+>>>>>>> parent of a657935d... oya
   isLoaded: 1
   isActive: 1
   isSubScene: 0
