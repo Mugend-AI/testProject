@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -28,12 +29,18 @@ MonoBehaviour:
     width: 1440
     height: 789
 >>>>>>> parent of a657935d... oya
+=======
+    x: 392
+    y: 214
+    width: 1440
+    height: 789
+>>>>>>> parent of 21e17430... きのこシーン
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 1
+  m_Maximized: 0
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -54,10 +61,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1280
-    height: 941
+    width: 1440
+    height: 789
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
+  m_UseTopView: 1
+  m_TopViewHeight: 30
+  m_UseBottomView: 1
+  m_BottomViewHeight: 20
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -75,10 +86,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1280
+    width: 1440
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+  m_LoadedToolbars:
+  - {fileID: 21}
+  m_MainToolbar: {fileID: 21}
   m_LastLoadedLayoutName: 
 --- !u!114 &4
 MonoBehaviour:
@@ -96,8 +110,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 921
-    width: 1280
+    y: 769
+    width: 1440
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -122,11 +136,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1280
-    height: 891
+    width: 1440
+    height: 739
   m_MinSize: {x: 911, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 140
@@ -136,6 +151,9 @@ MonoBehaviour:
 =======
   controlID: 58
 >>>>>>> parent of 8ad0dded... ver2
+=======
+  controlID: 127
+>>>>>>> parent of 21e17430... きのこシーン
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -155,11 +173,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 547
-    height: 891
+    width: 634
+    height: 739
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 40
@@ -169,6 +188,9 @@ MonoBehaviour:
 =======
   controlID: 59
 >>>>>>> parent of 8ad0dded... ver2
+=======
+  controlID: 46
+>>>>>>> parent of 21e17430... きのこシーン
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +208,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 547
-    height: 459
+    width: 634
+    height: 381
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -214,9 +236,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 459
-    width: 547
-    height: 432
+    y: 381
+    width: 634
+    height: 358
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -240,10 +262,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 547
+    x: 634
     y: 0
-    width: 205
-    height: 891
+    width: 222
+    height: 739
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
@@ -266,10 +288,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 752
+    x: 856
     y: 0
-    width: 249
-    height: 891
+    width: 280
+    height: 739
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 19}
@@ -292,10 +314,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1001
+    x: 1136
     y: 0
-    width: 279
-    height: 891
+    width: 304
+    height: 739
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
@@ -334,6 +356,7 @@ MonoBehaviour:
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
   m_Palette: {fileID: 1136940563276654, guid: e77bf335b82cfe74d81debd8bdf7484d, type: 3}
+  m_DrawGizmos: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -350,7 +373,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -376,12 +399,13 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     y: 73
@@ -395,10 +419,16 @@ MonoBehaviour:
     width: 633
     height: 360
 >>>>>>> parent of a657935d... oya
+=======
+    y: 19
+    width: 633
+    height: 360
+>>>>>>> parent of 21e17430... きのこシーン
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 76694d074be6878478dfb1a96801c397
   m_Gizmos: 1
+  m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 1
@@ -417,14 +447,15 @@ MonoBehaviour:
   m_ValidateTrueMetals: 0
   m_DoValidateTrueMetals: 0
   m_ExposureSliderValue: 0
-  m_ExposureSliderMax: 10
   m_SceneViewState:
+    m_AlwaysRefresh: 0
     showFog: 1
-    showMaterialUpdate: 0
     showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
   m_Grid:
     xGrid:
       m_Fade:
@@ -501,7 +532,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Animator
-    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 663490763026382308, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -565,12 +596,13 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     y: 532
@@ -592,11 +624,23 @@ MonoBehaviour:
   m_SerializedViewsNames: []
   m_SerializedViewsValues: []
 >>>>>>> parent of a657935d... oya
+=======
+    y: 400
+    width: 633
+    height: 337
+  m_ViewDataDictionary: {fileID: 0}
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+>>>>>>> parent of 21e17430... きのこシーン
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 1280, y: 720}
+=======
+  m_TargetSize: {x: 3840, y: 2160}
+>>>>>>> parent of 21e17430... きのこシーン
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -610,6 +654,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_HBaseRangeMin: -512
@@ -628,6 +673,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -180
     m_VBaseRangeMax: 180
 >>>>>>> parent of 8ad0dded... ver2
+=======
+    m_HBaseRangeMin: -1920
+    m_HBaseRangeMax: 1920
+    m_VBaseRangeMin: -1080
+    m_VBaseRangeMax: 1080
+>>>>>>> parent of 21e17430... きのこシーン
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -646,6 +697,7 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 546
       height: 390
     m_Scale: {x: 0.5078125, y: 0.5078125}
@@ -660,12 +712,19 @@ MonoBehaviour:
 >>>>>>> parent of 8ad0dded... ver2
     m_Translation: {x: 316.5, y: 158}
 >>>>>>> parent of a657935d... oya
+=======
+      width: 633
+      height: 316
+    m_Scale: {x: 0.14629629, y: 0.14629629}
+    m_Translation: {x: 316.5, y: 158}
+>>>>>>> parent of 21e17430... きのこシーン
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       x: -537.6
@@ -693,6 +752,15 @@ MonoBehaviour:
   m_defaultScale: 0.87777776
   m_LastWindowPixelSize: {x: 1266, y: 674}
 >>>>>>> parent of 8ad0dded... ver2
+=======
+      x: -2163.4177
+      y: -1080
+      width: 4326.8354
+      height: 2160
+    m_MinimalGUI: 1
+  m_defaultScale: 0.14629629
+  m_LastWindowPixelSize: {x: 633, y: 337}
+>>>>>>> parent of 21e17430... きのこシーン
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -714,7 +782,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
@@ -740,11 +808,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 547
@@ -761,10 +830,17 @@ MonoBehaviour:
     width: 220
     height: 718
 >>>>>>> parent of a657935d... oya
+=======
+    x: 635
+    y: 19
+    width: 220
+    height: 718
+>>>>>>> parent of 21e17430... きのこシーン
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
       m_SelectedIDs: 96cbffff
       m_LastClickedID: -13418
@@ -778,6 +854,11 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: f4faffff
 >>>>>>> parent of 8ad0dded... ver2
+=======
+      m_SelectedIDs: 8cfaffff
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8efaffff50fbffff
+>>>>>>> parent of 21e17430... きのこシーン
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Cube
@@ -817,11 +898,12 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 752
@@ -838,6 +920,12 @@ MonoBehaviour:
     width: 278
     height: 718
 >>>>>>> parent of a657935d... oya
+=======
+    x: 857
+    y: 19
+    width: 278
+    height: 718
+>>>>>>> parent of 21e17430... きのこシーン
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -852,12 +940,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets
+=======
+    - Assets/Scenes
+    m_Globs: []
+    m_OriginalText: 
+>>>>>>> parent of 21e17430... きのこシーン
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: 60
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_LastProjectPath: C:\Users\obaru\Desktop\testProject\GitHubTestProject
@@ -867,10 +962,14 @@ MonoBehaviour:
 =======
   m_LastProjectPath: /Users/bashiko_da_gama/Desktop/GitHubTestProject
 >>>>>>> parent of 8ad0dded... ver2
+=======
+  m_LastProjectPath: "C:\\Users\\Oyaio\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\testProject\\GitHubTestProject"
+>>>>>>> parent of 21e17430... きのこシーン
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: e2530000
@@ -886,6 +985,11 @@ MonoBehaviour:
     m_LastClickedID: 18372
     m_ExpandedIDs: 00000000c447000000ca9a3b
 >>>>>>> parent of 8ad0dded... ver2
+=======
+    m_SelectedIDs: d23e0000
+    m_LastClickedID: 16082
+    m_ExpandedIDs: 00000000cc3e000000ca9a3b
+>>>>>>> parent of 21e17430... きのこシーン
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -914,10 +1018,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 
 =======
     m_ExpandedIDs: 000000006c3b0000
 >>>>>>> parent of a657935d... oya
+=======
+    m_ExpandedIDs: 00000000cc3e0000
+>>>>>>> parent of 21e17430... きのこシーン
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -989,11 +1097,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000,
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 1001
@@ -1010,30 +1119,43 @@ MonoBehaviour:
     width: 303
     height: 718
 >>>>>>> parent of a657935d... oya
+=======
+    x: 1137
+    y: 19
+    width: 303
+    height: 718
+>>>>>>> parent of 21e17430... きのこシーン
   m_ViewDataDictionary: {fileID: 0}
-  m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
-  m_LockTracker:
-    m_IsLocked: 0
   m_PreviewResizer:
     m_CachedPref: -160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
+=======
+  m_GlobalObjectId: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+>>>>>>> parent of 21e17430... きのこシーン
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 12157, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1059,3 +1181,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
 >>>>>>> parent of a657935d... oya
+=======
+  m_Script: {fileID: 13963, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DontSaveToLayout: 0
+>>>>>>> parent of 21e17430... きのこシーン

@@ -1,9 +1,13 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/kinoko.unity
 =======
 - path: Assets/Scenes/bashiko.unity
 >>>>>>> parent of a657935d... oya
+=======
+- path: Assets/Scenes/oyaScene.unity
+>>>>>>> parent of 21e17430... きのこシーン
   isLoaded: 1
   isActive: 1
   isSubScene: 0
